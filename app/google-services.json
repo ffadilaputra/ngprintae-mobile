@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "162943229382",
+    "firebase_url": "https://belajar-auth-firebase.firebaseio.com",
+    "project_id": "belajar-auth-firebase",
+    "storage_bucket": "belajar-auth-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162943229382:android:fbf7bb2e54fa2641",
+        "android_client_info": {
+          "package_name": "firebase.belajar.ffadilaputra.belajar_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "162943229382-296oad88uv8ofk43ceerub48jh6d1viv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1Dw-6nPTTH35-r8-k1feKtfxfXz3k8y0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162943229382:android:6ed762e88cf746f9",
+        "android_client_info": {
+          "package_name": "ffadilaputra.org.bottom_toolbar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "162943229382-296oad88uv8ofk43ceerub48jh6d1viv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1Dw-6nPTTH35-r8-k1feKtfxfXz3k8y0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
