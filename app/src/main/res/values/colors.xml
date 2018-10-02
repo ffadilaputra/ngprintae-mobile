@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#fe485a</color>
+    <color name="colorPrimary">#0022A2</color>
     <color name="colorPrimaryDark">#EEEE</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="bgBottomNavigation">#fe485a</color>
+    <color name="colorAccent">#061497</color>
+    <color name="bgBottomNavigation">#1825DC</color>
     <color name="white">#EEE</color>
+    <color name="year">#999999</color>
+    <color name="title">#222222</color>
 </resources>
