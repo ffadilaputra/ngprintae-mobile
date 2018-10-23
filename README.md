@@ -3,7 +3,7 @@
 
 ## :construction_worker: Kelompok
 - [Ivan Fadila Putra](https://github.com/ffadilaputra)
-- Coy
+- M Choirul Arifin 
 
 ## :hammer: Requierment
 - Minimal requierment **Ice Cream Sandwich**
