@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -42,10 +43,8 @@ public class MainActivity extends AppCompatActivity {
                         fragment = new HistoryFragment();
                         loadFragment(fragment);
                         return true;
-                    case R.id.navigation_cart:
-                        return true;
                     case R.id.navigation_profile:
-                        //auth.signOut();
+                        toolbar.setTitle("Profile");
                         return true;
                 }
                 return false;
@@ -58,4 +57,11 @@ public class MainActivity extends AppCompatActivity {
         transaction.addToBackStack(null);
         transaction.commit();
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_enu, menu);
+        return true;
+    }
+
 }

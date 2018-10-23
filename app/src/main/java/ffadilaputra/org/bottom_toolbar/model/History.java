@@ -1,11 +1,11 @@
 package ffadilaputra.org.bottom_toolbar.model;
 
-public class Movie {
-    private String title,genre,year;
+public class History {
+    private String title,description,year;
 
-    public Movie(String title, String genre, String year) {
+    public History(String title, String description, String year) {
         this.title = title;
-        this.genre = genre;
+        this.description = description;
         this.year = year;
     }
 
@@ -17,12 +17,12 @@ public class Movie {
         this.title = title;
     }
 
-    public String getGenre() {
-        return genre;
+    public String getDescription() {
+        return description;
     }
 
-    public void setGenre(String genre) {
-        this.genre = genre;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getYear() {

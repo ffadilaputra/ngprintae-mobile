@@ -15,19 +15,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 import ffadilaputra.org.bottom_toolbar.R;
-import ffadilaputra.org.bottom_toolbar.adapter.MovieAdapter;
-import ffadilaputra.org.bottom_toolbar.model.Movie;
+import ffadilaputra.org.bottom_toolbar.adapter.HistoryAdapter;
+import ffadilaputra.org.bottom_toolbar.model.History;
 
 public class HistoryFragment extends Fragment {
 
     private RecyclerView recyclerView;
-    private MovieAdapter movieAdapter;
-    private List<Movie> movieList = new ArrayList<>();
+    private HistoryAdapter historyAdapter;
+    private List<History> historyList = new ArrayList<>();
 
     public static HistoryFragment newInstance(String param1, String param2) {
         HistoryFragment fragment = new HistoryFragment();
         Bundle args = new Bundle();
-
         fragment.setArguments(args);
         return fragment;
     }
@@ -43,25 +42,21 @@ public class HistoryFragment extends Fragment {
          View view = inflater.inflate(R.layout.fragment_history,container,false);
 
          recyclerView = (RecyclerView)view.findViewById(R.id.recycler_view);
-         movieAdapter = new MovieAdapter(movieList);
+         historyAdapter = new HistoryAdapter(historyList);
          RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
          recyclerView.setLayoutManager(layoutManager);
          recyclerView.setItemAnimator(new DefaultItemAnimator());
-         recyclerView.setAdapter(movieAdapter);
-         prepareMovie();
+         recyclerView.setAdapter(historyAdapter);
+         prepareData();
          return view;
     }
 
-    private void prepareMovie() {
-        Movie movie = new Movie("Inside Out", "Animation, Kids & Family", "2015");
-        movieList.add(movie);
-        movie = new Movie("Star Wars: Episode VII - The Force Awakens", "Action", "2015");
-        movieList.add(movie);
-        movie = new Movie("Shaun the Sheep", "Animation", "2015");
-        movieList.add(movie);
-        movie = new Movie("Family Friendly", "Animation", "2015");
-        movieList.add(movie);
-        movieAdapter.notifyDataSetChanged();
+    private void prepareData() {
+        History history = new History("Bromo Trip", "Bromo trip uhuy", "2015");
+        historyList.add(history);
+        history = new History("BJBR", "Gratisan uhuy", "2018");
+        historyList.add(history);
+        historyAdapter.notifyDataSetChanged();
     }
 
 }

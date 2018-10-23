@@ -10,43 +10,43 @@ import android.widget.TextView;
 import java.util.List;
 
 import ffadilaputra.org.bottom_toolbar.R;
-import ffadilaputra.org.bottom_toolbar.model.Movie;
+import ffadilaputra.org.bottom_toolbar.model.History;
 
-public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MyViewHolder> {
+public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.MyViewHolder> {
 
-    private List<Movie> movieList;
+    private List<History> historyList;
 
-    public MovieAdapter(List<Movie> movieList) {
-        this.movieList = movieList;
+    public HistoryAdapter(List<History> historyList) {
+        this.historyList = historyList;
     }
 
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.movie_list_row,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.history_list_row,parent,false);
         return new MyViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        Movie movie = movieList.get(position);
-        holder.title.setText(movie.getTitle());
-        holder.genre.setText(movie.getGenre());
-        holder.year.setText(movie.getYear());
+        History history = historyList.get(position);
+        holder.title.setText(history.getTitle());
+        holder.description.setText(history.getDescription());
+        holder.year.setText(history.getYear());
     }
 
     @Override
     public int getItemCount() {
-        return movieList.size();
+        return historyList.size();
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView title,year,genre;
+        public TextView title,year,description;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             title = (TextView) itemView.findViewById(R.id.title);
-            genre = (TextView) itemView.findViewById(R.id.genre);
+            description = (TextView) itemView.findViewById(R.id.description);
             year = (TextView) itemView.findViewById(R.id.year);
         }
     }

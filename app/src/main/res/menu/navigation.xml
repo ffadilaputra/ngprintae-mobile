@@ -11,13 +11,7 @@
         android:title="@string/title_historya" />
 
     <item
-        android:id="@+id/navigation_cart"
-        android:icon="@drawable/ic_action_cart"
-        android:title="@string/title_cart" />
-
-    <item
         android:id="@+id/navigation_profile"
         android:icon="@drawable/ic_person_white_24dp"
         android:title="@string/title_profile" />
-
 </menu>

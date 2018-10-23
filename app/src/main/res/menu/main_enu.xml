@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ffadilaputra.org.bottom_toolbar.MainActivity">
+
+    <item
+        android:id="@+id/logout_btn"
+        android:title="Logout" />
+</menu>
