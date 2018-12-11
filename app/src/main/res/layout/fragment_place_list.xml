@@ -5,6 +5,12 @@
     android:layout_height="match_parent"
     tools:context="ffadilaputra.org.bottom_toolbar.fragment.HomeFragment">
 
+    <fragment
+        android:id="@+id/place_fragment"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/places_lst"
         android:scrollbars="vertical"
