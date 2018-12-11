@@ -12,6 +12,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 import ffadilaputra.org.bottom_toolbar.fragment.HistoryFragment;
 import ffadilaputra.org.bottom_toolbar.fragment.HomeFragment;
+import ffadilaputra.org.bottom_toolbar.fragment.MediaFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,7 +45,9 @@ public class MainActivity extends AppCompatActivity {
                         loadFragment(fragment);
                         return true;
                     case R.id.navigation_profile:
-                        toolbar.setTitle("Profile");
+                        toolbar.setTitle("Testimoni");
+                        fragment = new MediaFragment();
+                        loadFragment(fragment);
                         return true;
                 }
                 return false;
