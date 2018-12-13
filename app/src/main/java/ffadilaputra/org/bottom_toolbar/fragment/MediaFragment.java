@@ -58,12 +58,12 @@ public class MediaFragment extends Fragment {
 		textLoading.setVisibility(VideoView.INVISIBLE);
 
 		listVideo = new ArrayList<>();
-		listVideo.add("tersandung");
+		listVideo.add("tes");
 		listVideo.add("terjungkir");
 		listVideo.add("terbalik");
 
 
-		adapter = new ArrayAdapter(getActivity(), android.R.layout.simple_list_item_1,TestimoniModel.testimoni);
+		adapter = new ArrayAdapter(getActivity(), android.R.layout.simple_list_item_1, TestimoniModel.testimoni);
 		listView.setAdapter(adapter);
 
 		listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
