@@ -58,7 +58,7 @@ public class MediaFragment extends Fragment {
 		textLoading.setVisibility(VideoView.INVISIBLE);
 
 		listVideo = new ArrayList<>();
-		listVideo.add("tes");
+		listVideo.add("tersandung");
 		listVideo.add("terjungkir");
 		listVideo.add("terbalik");
 

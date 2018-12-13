@@ -44,11 +44,12 @@
 
             <ImageView
                 style="@style/WidgetButtonImage"
-                android:src="@drawable/ic_search_black_24dp" />
+                android:src="@drawable/ic_action_history" />
 
             <TextView
+                android:id="@+id/dream_text"
                 style="@style/WidgetButtonText"
-                android:text="Test" />
+                android:text="Impian" />
         </LinearLayout>
 
         <TextView style="@style/WidgetButtonHorizontalSpace" />

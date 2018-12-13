@@ -40,4 +40,9 @@ public class TestimoniModel {
 		this.durasi = durasi;
 		this.videoRawId = videoRawId;
 	}
+
+	@Override
+	public String toString() {
+		return this.nama;
+	}
 }
