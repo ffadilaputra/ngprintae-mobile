@@ -46,6 +46,7 @@ public class HistoryFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_history,container,false);
 
         Button btnSubmit = (Button) view.findViewById(R.id.submit);
+        Button btnDelete = (Button) view.findViewById(R.id.del);
         txtName = (EditText) view.findViewById(R.id.title);
         txtDesc = (EditText) view.findViewById(R.id.description);
         txtYear = (EditText) view.findViewById(R.id.year);

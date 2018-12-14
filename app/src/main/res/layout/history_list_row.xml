@@ -35,5 +35,13 @@
         android:textColor="@color/year"
         android:id="@+id/year"
         />
+
+    <Button
+        android:id="@+id/del"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:text="Hapus"
+        android:layout_marginLeft="146dp"
+        android:layout_marginTop="-17dp" />
     
 </RelativeLayout>
