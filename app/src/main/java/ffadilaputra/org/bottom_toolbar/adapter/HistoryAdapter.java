@@ -1,5 +1,6 @@
 package ffadilaputra.org.bottom_toolbar.adapter;
 
+import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -14,9 +15,11 @@ import ffadilaputra.org.bottom_toolbar.model.History;
 
 public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.MyViewHolder> {
 
+    private Context context;
     private List<History> historyList;
 
-    public HistoryAdapter(List<History> historyList) {
+    public HistoryAdapter(Context context , List<History> historyList) {
+        this.context = context;
         this.historyList = historyList;
     }
 

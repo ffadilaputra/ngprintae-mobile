@@ -1,7 +1,13 @@
 package ffadilaputra.org.bottom_toolbar.model;
 
-public class History {
+import com.orm.SugarRecord;
+
+public class History extends SugarRecord<History> {
     private String title,description,year;
+
+    public History(){
+
+    }
 
     public History(String title, String description, String year) {
         this.title = title;

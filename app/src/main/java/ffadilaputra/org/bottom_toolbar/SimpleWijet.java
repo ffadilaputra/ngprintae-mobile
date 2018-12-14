@@ -19,6 +19,16 @@ public class SimpleWijet extends AppWidgetProvider {
         for (int appWidgetId : appWidgetIds) {
             updateAppWidget(context, appWidgetManager, appWidgetId);
         }
+
+        Intent intent = new Intent(context, AddHistory.class);
+        intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID,appWidgetIds);
+        intent.setData(Uri.parse("tel:/"+ (int)System.currentTimeMillis()));
+
+        PendingIntent pendingIntent = PendingIntent.getActivity(context,0,intent,PendingIntent.FLAG_UPDATE_CURRENT);
+        RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.simple_wijet);
+        views.setOnClickPendingIntent(R.id.layout_wijet,pendingIntent);
+
+        appWidgetManager.updateAppWidget(appWidgetIds,views);
     }
 
 
@@ -36,12 +46,21 @@ public class SimpleWijet extends AppWidgetProvider {
             int appWidgetId) {
 
         CharSequence widgetText = context.getString(R.string.appwidget_text);
+
+
         // Construct the RemoteViews object
         RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.simple_wijet);
         views.setTextViewText(R.id.appwidget_text, widgetText);
+        //views.setTextViewText(R.id.dream_text, widgetDreamText);
+
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://airbnb.com"));
+        //Intent hihi = new Intent(context, AddHistory.class);
+
         PendingIntent pendingIntent = PendingIntent.getActivity(context,0,intent,0);
+        //PendingIntent tes = PendingIntent.getActivity(context,0,hihi,0);
+
         views.setOnClickPendingIntent(R.id.appwidget_text, pendingIntent);
+        //views.setOnClickPendingIntent(R.id.dream_text, tes);
         // Instruct the widget manager to update the widget
         appWidgetManager.updateAppWidget(appWidgetId, views);
     }
